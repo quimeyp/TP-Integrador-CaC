@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tickets.css">
+    <title>Comprar Ticket</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="../imagenes/codoacodo.png" alt="Logo de codo a codo">
+                        <span>Conf Bs As</span>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">La conferencia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Los oradores</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">El lugar y la fecha</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Conviertete en orador</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-green" href="#">Comprar tickets</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección 1 CARDS-->
+    <section class="py-5 text-center">
+        <div class="container-cards">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card blue">
+                        <div class="card-body text-center">
+                            <h2 class="card-title">Estudiante</h2>
+                            <p class="card-text">
+                                Tienen un descuento
+                            </p>
+                            <h5 class="font-weight-bold">80%</h5>
+                            <small class="form-text text-muted">*presentar documentación</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card green">
+                        <div class="card-body text-center">
+                            <h2 class="card-title">Trainee</h2>
+                            <p class="card-text">
+                                Tienen un descuento
+                            </p>
+                            <h5 class="font-weight-bold">50%</h5>
+                            <small class="form-text text-muted">*presentar documentación</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card yellow">
+                        <div class="card-body text-center">
+                            <h2 class="card-title">Junior</h2>
+                            <p class="card-text">
+                                Tienen un descuento
+                            </p>
+                            <h5 class="font-weight-bold">15%</h5>
+                            <small class="form-text text-muted">*presentar documentación</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Sección 2 FORMULARIO-->
+    <section class="text-center py-5 info">
+        <div class="container">
+            <p class="text-uppercase mb-2">VENTA</p>
+            <h1 class="font-weight-bold display-4 mb-4">VALOR DE TICKET $200</h1>
+            <form class="col-md-10 text-center">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Correo"></textarea>
+                </div>
+                <div class="form-row">
+                    <!--Cantidad de Tickets -->
+                    <div class="col">
+                        <p class="left-align">Cantidad</p>
+                        <input type="number" class="form-control" id="cantidadTickets" placeholder="Cantidad" min="0">
+                    </div>
+                    <!--Categoría -->
+                    <div class="col">
+                        <p class="left-align">Categoría</p>
+                        <select class="form-control" id="categoriaSeleccion" name="categoria">
+                            <option value="general">General</option>
+                            <option value="estudiante">Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="result-container">
+                    <p>Total a pagar: $<span id="precioFinal">0.00</span></p>
+                </div>
+                <!-- BOTONES -->
+                <div class="button-container">
+                    <button id="borrarButton" class="btn btn-success custom-button">Borrar</button>
+                    <button id="resumenButton" class="btn btn-success custom-button" type="button">Resumen</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="footer-link">
+                    <a href="#">Preguntas Frecuentes</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#">Contactenos</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#">Prensa</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#">Conferencias</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#">Terminos y condiciones</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#">Privacidad</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#">Estudiantes</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="tickets.js"></script>
+</body>
+
+</html>

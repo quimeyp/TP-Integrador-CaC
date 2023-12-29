@@ -1,0 +1,316 @@
+.logo img {
+    max-width: 45%;
+    height: auto;
+}
+
+.logo span {
+    font-size: 19px;
+}
+
+.nav-link-green {
+    color: green !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-section h3,
+.background-section p {
+    text-align: right;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.1rem;
+}
+
+.col-md-12 h1 {
+    margin-top: 0.0rem;
+}
+
+.col-md-12 p {
+    margin-bottom: 0.0rem;
+}
+
+.card.text-dark {
+    background-color: rgb(48, 43, 43);
+}
+
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bg-gray h5,
+.bg-gray p {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.custome-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+section {
+    background-color: #f8f9fa;
+}
+
+
+/* Formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.text-uppercase {
+    margin-bottom: 0px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    background-color: white;
+    margin: 0 10px;
+}
+
+.blue {
+    border-color: #007BFF;
+}
+
+.green {
+    border-color: #28A745;
+}
+
+.yellow {
+    border-color: #FFC107;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 150px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.custom-button {
+    background-color: #4CAF50;
+    color: #fff;
+    width: 50%;
+}
+
+.result-container {
+    background-color: #add5f6f1;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+#precioFinal {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background: rgb(28, 54, 67);
+    background: linear-gradient(90deg, rgba(28, 54, 67, 1) 0%, rgba(30, 83, 113, 1) 100%);
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    margin-right: 20px;
+}
+
+.footer-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
+
+.info {
+    margin-top: -70px;
+}
+
+
+/* Dispositivos móviles */
+@media (max-width: 767px) {
+    .navbar {
+        justify-content: flex-end;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .logo span {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .navbar-toggler-icon {
+        color: white;
+    }
+
+    .background-section {
+        padding: 100px 0;
+    }
+
+    .background-section h3,
+    .background-section p {
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    .logo span {
+        font-size: 14px;
+    }
+
+    .navbar-toggler-icon {
+        color: white;
+    }
+
+    .col-md-3,
+    .col-md-9 {
+        text-align: center;
+    }
+
+    .container-cards {
+        margin: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    form {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+    }
+
+    .text-uppercase {
+        margin-bottom: 10px;
+    }
+
+    .left-align {
+        text-align: center;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .custom-button {
+        width: 100%;
+    }
+
+    .result-container {
+        text-align: center;
+    }
+}
+
+.custom-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}

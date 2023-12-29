@@ -1,0 +1,235 @@
+/*Página Principal*/
+
+.navbar {
+    padding: 3rem;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-verde {
+    color: rgb(15, 169, 15) !important;
+}
+
+.card-superpuesta img {
+    filter: brightness(30%);
+}
+
+.card-img-overlay {
+    padding-right: 8.5rem !important;
+    padding-top: 20% !important;
+    padding-left: 48% !important;
+    height: max-content;
+}
+
+.card-title1,
+.card-text1,
+.btn-outline {
+    color: white;
+}
+
+.card-text1 {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    text-align: justify;
+}
+
+.card-title1 {
+    font-size: 2rem;
+}
+
+.btn-success {
+    background: rgb(14, 151, 14) !important;
+}
+
+.btn-success:hover {
+    border: none;
+    background: rgb(9, 72, 9) !important;
+}
+
+.titulo-oradores div {
+    font-size: 14px;
+    text-align: center;
+}
+
+.titulo-oradores {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.container-oradores {
+    margin-top: 20px;
+    padding: 1rem 10rem;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    background-color: rgb(221, 218, 218);
+    cursor: pointer;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.honolulu-text {
+    font-size: 14px;
+    color: white;
+}
+
+.honolulu-text .btn {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.convocatoria-oradores {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.div-orador {
+    font-size: 14px;
+}
+
+.text-convocatoria {
+    font-size: 13px;
+}
+
+.formulario {
+    padding-top: 5px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.texto-area {
+    font-size: 12px;
+}
+
+.formulario button {
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    background-color: #7fc33b !important;
+    color: whitesmoke;
+}
+
+footer {
+    padding-top: 15px;
+}
+
+.footer-lista {
+    background-image: linear-gradient(to right, #1a4169,
+            #0a4674, #064e74, #1a5c8a, #085fab);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 6rem;
+}
+
+.footer-link {
+    color: white !important;
+    font-size: 14px !important;
+    padding: 1.5rem 2.5rem !important;
+}
+
+.swal2-popup {
+    width: 50px;
+}
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 910px) {
+
+    .navbar {
+        position: static !important;
+    }
+
+    .card-superpuesta img {
+        filter: brightness(100%);
+    }
+
+    .tarjeta {
+        padding-right: 8.5rem !important;
+        max-height: 50vh;
+        padding-left: 40vw !important;
+        font-size: 0.5rem;
+    }
+
+    .card-img-overlay {
+        padding: 2rem !important;
+        position: static !important;
+        background-color: black;
+    }
+
+    .card-text1 {
+        font-size: 1rem;
+        padding-top: 0.7rem;
+    }
+
+    .card-title1 {
+        font-size: 1.5rem;
+    }
+
+    .formulario {
+        padding-top: 5px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .footer-lista {
+        padding: 0 2rem;
+    }
+
+    .footer-link {
+        padding: 1.5rem 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .grupo-tickets {
+        margin-top: 2rem;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+
+    .honolulu-text {
+        text-align: center;
+    }
+
+    .honolulu-text .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .formulario-tickets {
+        width: 90%;
+    }
+
+    .footer-ticket {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .container-oradores {
+        margin-top: 20px;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width: 848px) and (min-height: 850px) {
+
+    .footer-ticket {
+        position: fixed;
+    }
+}
